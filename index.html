@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Goju Ryu Kazoku | Landing Page Modular</title>
+    <meta
+      name="description"
+      content="Escuela de Karate Do Goju Ryu Kazoku en Quilpué. Formación en disciplina, respeto y superación personal."
+    />
+    <meta name="theme-color" content="#0f2a44" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="assets/logo.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <img
+              src="assets/logo.jpeg"
+              class="rounded-circle me-2"
+              alt="Logo"
+              style="height: 40px; width: 40px; object-fit: cover"
+            />
+            <span class="fw-bold">Goju Ryu Kazoku</span>
+          </a>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start"
+            >
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#historia">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#eventos">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#encuentranos">Encuéntranos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="inicio"
+        class="hero bg-dark text-white text-center py-5 d-flex align-items-center"
+        style="min-height: 50vh"
+      >
+        <div class="container py-5">
+          <h1 class="display-3 fw-bold text-uppercase mb-3">Goju Ryu Kazoku</h1>
+          <p class="lead fs-4 fw-light">Disciplina • Respeto • Superación</p>
+        </div>
+      </section>
+
+      <section id="historia" class="historia py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-4 fw-bold">Historia</h2>
+          <p class="lead text-muted mx-auto" style="max-width: 800px">
+            La escuela Goju Ryu Kazoku fue fundada en <strong>2026</strong> con
+            el objetivo de formar practicantes en el arte del Karate-Do,
+            fomentando disciplina, respeto y superación personal.
+          </p>
+        </div>
+      </section>
+
+      <section id="instructores" class="instructores py-5">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Nuestros Instructores</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <article class="card h-100 shadow-sm border-0 text-center">
+                <img
+                  src="assets/img/instructores/hugo.png"
+                  class="card-img-top bg-light"
+                  alt="Sensei Hugo Orellana"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-bold">Sensei Hugo Orellana</h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card h-100 shadow-sm border-0 text-center">
+                <img
+                  src="assets/instructores/carlos_quintana.png"
+                  class="card-img-top bg-light"
+                  alt="Sensei Carlos Quintana"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-bold">Sensei Carlos Quintana</h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card h-100 shadow-sm border-0 text-center">
+                <img
+                  src="assets/img/instructores/sof.png"
+                  class="card-img-top bg-light"
+                  alt="Sensei Sofía Quintana"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-bold">Sensei Sofía Quintana</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="galeria py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-3 fw-bold">Galería</h2>
+          <p class="mb-5 text-muted">Momentos, disciplina y crecimiento</p>
+
+          <div
+            id="carruselKarate"
+            class="carousel slide shadow rounded overflow-hidden mx-auto"
+            data-bs-ride="carousel"
+            style="max-width: 900px"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carruselKarate"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carruselKarate"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carruselKarate"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carruselKarate"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/galeria/carrucel1.jpeg"
+                  class="d-block w-100"
+                  alt="Entrenamiento intensivo"
+                  style="height: 500px; object-fit: cover"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5>Entrenamiento Intensivo</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/galeria/carrusel2.jpeg"
+                  class="d-block w-100"
+                  alt="Examen de cinturón"
+                  style="height: 500px; object-fit: cover"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5>Preparación para Examen</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/galeria/carrusel5.jpeg"
+                  class="d-block w-100"
+                  alt="Evento interno"
+                  style="height: 500px; object-fit: cover"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5>Evento Interno</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/galeria/carrucel4.jpeg"
+                  class="d-block w-100"
+                  alt="Demostración"
+                  style="height: 500px; object-fit: cover"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5>Demostración Técnica</h5>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carruselKarate"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carruselKarate"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+              <div class="card h-100 border-0 shadow-sm bg-white">
+                <div class="card-body py-4">
+                  <i class="fas fa-medal fs-1 text-primary mb-3"></i>
+                  <h4 class="fw-bold">Exámenes</h4>
+                  <p class="text-muted mb-0">
+                    Evaluaciones y progreso de alumnos
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0 shadow-sm bg-white">
+                <div class="card-body py-4">
+                  <i class="fas fa-users fs-1 text-primary mb-3"></i>
+                  <h4 class="fw-bold">Eventos</h4>
+                  <p class="text-muted mb-0">
+                    Participación en torneos y actividades
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0 shadow-sm bg-white">
+                <div class="card-body py-4">
+                  <i class="fas fa-fist-raised fs-1 text-primary mb-3"></i>
+                  <h4 class="fw-bold">Entrenamientos</h4>
+                  <p class="text-muted mb-0">Clases y desarrollo técnico</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="eventos" class="eventos py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-5">Próximos Eventos</h2>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card h-100 border-primary border-top-0 border-end-0 border-bottom-0 border-4 shadow-sm text-start"
+              >
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h5 class="card-title fw-bold mb-0">Seminario Goju Ryu</h5>
+                    <span class="badge bg-primary">Destacado</span>
+                  </div>
+                  <h6 class="card-subtitle mb-3 text-muted">
+                    <i class="far fa-calendar-alt me-2"></i> 15 de Agosto, 2026
+                  </h6>
+                  <p class="card-text">
+                    Clase especial enfocada en Bunkai y técnicas tradicionales
+                    de respiración.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card h-100 border-secondary border-top-0 border-end-0 border-bottom-0 border-4 shadow-sm text-start"
+              >
+                <div class="card-body">
+                  <h5 class="card-title fw-bold mb-2">Examen de Grados</h5>
+                  <h6 class="card-subtitle mb-3 text-muted">
+                    <i class="far fa-calendar-alt me-2"></i> 05 de Septiembre,
+                    2026
+                  </h6>
+                  <p class="card-text">
+                    Evaluación oficial para avance de cinturones (Kyu).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="encuentranos" class="encuentranos py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Encuéntranos</h2>
+            <p class="text-muted">
+              Estamos listos para recibirte y comenzar tu camino en el Karate-Do
+            </p>
+          </div>
+
+          <div class="row g-5 align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="card border-0 shadow-sm p-2">
+                <h4 class="mb-3 ps-2 pt-2">
+                  <i class="fas fa-location-dot text-danger me-2"></i> Ubicación
+                </h4>
+                <p class="ps-2 text-muted">
+                  Del Alba 1340, Villa Alemana, Valparaíso, Chile
+                </p>
+                <div class="ratio ratio-16x9 rounded overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13386.609462580795!2d-71.3853155!3d-33.0396489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d701e66c6b41%3A0x6b4ef823d70233b3!2sVilla%20Alemana%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1718060316000!5m2!1ses-419!2scl"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div
+                class="card border-0 shadow-sm p-4 h-100 d-flex flex-column justify-content-center"
+              >
+                <h4 class="mb-4 text-center">
+                  <i class="fas fa-phone text-success me-2"></i> Contáctanos
+                </h4>
+                <div class="d-grid gap-3">
+                  <a
+                    class="btn btn-success btn-lg d-flex align-items-center justify-content-center gap-2"
+                    href="https://wa.me/56973959748"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-whatsapp fs-4"></i> WhatsApp 1 (+56 9 7395
+                    9748)
+                  </a>
+                  <a
+                    class="btn btn-success btn-lg d-flex align-items-center justify-content-center gap-2"
+                    href="https://wa.me/56975105187"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-whatsapp fs-4"></i> WhatsApp 2 (+56 9 7510
+                    5187)
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center gap-2 mt-2"
+                    href="mailto:kazokugojuryu@gmail.com"
+                  >
+                    <i class="fas fa-envelope fs-4"></i> kazokugojuryu@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-3 text-light opacity-75">
+          © 2026 Goju Ryu Kazoku. Todos los derechos reservados.
+        </p>
+        <div class="d-flex justify-content-center gap-4">
+          <a
+            href="https://www.instagram.com/karatedokazoku/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white opacity-75 text-decoration-none h4 hover-opacity-100 transition"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61585646452368"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white opacity-75 text-decoration-none h4 hover-opacity-100 transition"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
