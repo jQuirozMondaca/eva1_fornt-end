@@ -7,7 +7,6 @@
 body {
     font-family: var(--fuente-principal);
     background-color: #f8f9fa;
-    /* bg-light de bootstrap por defecto */
 }
 
 /* MÓDULO: NAVEGACIÓN Y SCROLL */
@@ -24,8 +23,6 @@ section {
 
 .hero {
     background-color: var(--color-primario) !important;
-    /* Fuerza el color institucional */
-    /* background-image: linear-gradient(rgba(15, 42, 68, 0.8), rgba(15, 42, 68, 0.8)), url('../assets/hero-bg.jpg'); */
     background-size: cover;
     background-position: center;
 }
@@ -37,4 +34,35 @@ section {
 
 .hover-opacity-100:hover {
     opacity: 1 !important;
+}
+
+color de
+
+/* Color dorado para texto del navbar y sección inicio */
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .navbar-brand .fw-bold {
+    color: #FFD700 !important;
+}
+
+/* Código sugerido por Copilot para hover de los enlaces del navbar y el logo */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .navbar-brand:hover {
+    color: #FFEA00 !important;
+    background-color: rgba(255, 234, 0, 0.08);
+    border-radius: 0.35rem;
+    text-shadow: 0 0 10px rgba(255, 234, 0, 0.6);
+    transition: color 0.18s ease, background-color 0.18s ease, text-shadow 0.18s ease;
+}
+
+.hero h1,
+.hero p,
+.hero .lead {
+    color: #FFD700 !important;
+}
+
+/* Asegurar contraste en el toggler cuando está visible */
+.navbar-toggler {
+    border-color: rgba(255, 215, 0, 0.2);
 }
