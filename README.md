@@ -4,6 +4,6 @@ Evaluación 1 de fornt-end, se utilizó Github copilot para realizar algunas mej
 
 ### Tecnologías usadas:
 - Html5
-- CSS
-- Bootstrap
+- CSS / bootstrap
+
 
